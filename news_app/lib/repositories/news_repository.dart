@@ -10,7 +10,7 @@ class NewsRepository{
     );
 
     var data = jsonDecode(respone.body);
-    List<ArticleModel>? _articleModelList=[];
+    List<ArticleModel> _articleModelList=[];
     
     if(respone.statusCode==200){
       for(var item in data["articles"])
